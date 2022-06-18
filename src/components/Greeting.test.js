@@ -42,6 +42,8 @@ describe("Greeting component", () => {
 
 		const outputElement = screen.queryByText("good to see you!", {
 			exact: false,
+
+			//https://www.w3.org/TR/html-aria/#docconformance
 		});
 		expect(outputElement).toBeNull();
 	});
